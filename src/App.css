@@ -1,0 +1,275 @@
+@keyframes fly_st {
+	from {
+		top: -12%;
+		left: -8%;
+		transform: rotate(0deg);
+	}
+
+	25% {
+		left: 20%;
+	}
+
+	50% {
+		left: -6%;
+	}
+
+	75% {
+		left: 12%;
+	}
+
+	to {
+		top: 100%;
+		left: -10%;
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes fly_nd {
+	from {
+		top: 100%;
+	}
+
+	50% {
+		top: 100%;
+		left: 55%;
+		transform: rotate(0deg);
+	}
+
+	75% {
+		left: 34%;
+	}
+
+	to {
+		top: -6%;
+		left: 17%;
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes fly_rd {
+	from {
+		top: -9%;
+	}
+
+	25% {
+		top: -9%;
+		left: 64%;
+		transform: rotate(0deg);
+	}
+
+	50% {
+		left: 46%;
+	}
+
+	75% {
+		left: 62%;
+	}
+
+	to {
+		top: 100%;
+		left: 110%;
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes fly_th {
+	from {
+		top: 100%;
+	}
+
+	50% {
+		top: 100%;
+		left: 42%;
+		transform: rotate(0deg);
+	}
+
+	75% {
+		left: 82%;
+	}
+
+	to {
+		top: -10%;
+		left: 70%;
+		transform: rotate(360deg);
+	}
+}
+
+.Page {
+	position: fixed;
+	height: 100%;
+	min-height: 490px;
+	width: 100%;
+	min-width: 285px;
+	background: #1F3375;
+	font-family: 'Roboto', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 21px;
+	text-align: center;
+	color: white;
+}
+
+.Rectangle {
+	position: absolute;
+	background: rgba(48, 66, 131, 0.5);
+	border-radius: 10px;
+}
+
+.--first {
+	animation: fly_st 16s infinite linear;
+	width: 62.95px;
+	height: 62.95px;
+}
+
+.--second {
+	animation: fly_nd 18s infinite linear;
+	width: 33.45px;
+	height: 33.45px;
+}
+
+.--third {
+	animation: fly_rd 18s infinite linear;
+	width: 40.71px;
+	height: 40.71px;
+	border-radius: 14px;
+}
+
+.--fourth {
+	animation: fly_th 20s infinite linear;
+	width: 45.92px;
+	height: 45.92px;
+}
+
+.content {
+	width: 100%;
+	height: 100%;
+}
+
+.content * {
+	position: relative;
+}
+
+header {
+	height: 9.6%
+}
+
+main {
+	height: 84.17%;
+	width: 90%;
+	margin: auto;
+}
+
+.messages_status {
+	top: 49%;
+}
+
+svg {
+	display: block;
+	margin: auto;
+}
+
+.font_headline {
+	font-weight: bold;
+	font-size: 25px;
+	line-height: 29px;
+	top: 3%;
+}
+
+.list, .Button {
+	max-width: 450px;
+	margin: auto;
+	padding: 0;
+}
+
+ul {
+	text-align: left;
+	margin: 0;
+	padding: 0 8%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.Button {
+	width: 88%;
+}
+
+.Button--lvl-secondary {
+	background-color: #72A3FC;
+	color: white;
+}
+
+.controls_skip {
+	display: block;
+	top: 12.6%;
+	text-decoration: underline;
+}
+
+.--orange {
+	background-color: #F6B85C;
+}
+
+footer {
+	width: 78.67%;
+	height: 6.23%;
+	margin: auto;
+}
+
+.page_label {
+	display: inline-block;
+	vertical-align: top;
+	background: #304283;
+	border-radius: 15px;
+	width: 6.9%;
+	height: 14.44%;
+}
+
+.page_label:not(:last-child) {
+	margin-right: 1.36%;
+}
+
+.--current {
+	background: #B0ACE3;
+}
+
+@media only screen and (max-height: 660px), (max-width: 374px) {
+	.Page {
+		font-size: 12px;
+		line-height: 16.8px;
+	}
+
+	.font_headline {
+		font-size: 20px;
+		line-height: 23.2px;
+	}
+
+	.Button--sz-xl .Button__content {
+		font-size: 13.6px;
+	}
+
+	.--orange {
+		line-height: 16px;
+	}
+}
+
+@media only screen and (min-height: 900px) {
+	.Page {
+		font-size: 21px;
+		line-height: 29.4px;
+	}
+
+	.font_headline {
+		font-size: 35px;
+		line-height: 40.6px;
+	}
+
+	.Button--sz-xl .Button__content {
+		font-size: 23.8px;
+	}
+
+	.--orange {
+		line-height: 28px;
+	}	
+}

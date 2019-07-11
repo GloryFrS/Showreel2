@@ -1,0 +1,37 @@
+.images_geo {
+	height: 39.4%;
+}
+
+.PersikHide {
+	height: 63%;
+	top: 31%;
+}
+
+.messages_geo {
+	height: 31%;
+}
+
+.mes_0_geo {
+	top: 17%;
+}
+
+.controls_geo {
+	height: 29.6%;
+}
+
+.images_map_geo {
+	height: 89%;
+}
+
+.StaticMap {
+	top: 1.6%;
+	height: 96.4%;
+	background-size: auto 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	border-radius: 22px;
+}
+
+.controls_map_geo {
+	height: 11%;
+}

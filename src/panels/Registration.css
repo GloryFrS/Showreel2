@@ -1,0 +1,26 @@
+.images_reg {
+	height: 32.3%;
+}
+
+.SpotHI {
+	height: 68%;
+	top: 25.5%;
+}
+
+.messages_reg {
+	height: 51.6%;
+}
+
+.messages_blue_reg {
+	top: 12.2%;
+	color: #C9D4FA;
+}
+
+.messages_weight_reg {
+	top: 21.6%;
+	font-weight: 500;
+}
+
+.controls_reg {
+	height: 16.1%;
+}
