@@ -45,6 +45,7 @@ class App extends React.Component {
 							action_bar_color: '#1F3375'
 						});
 					}
+					console.log(e.detail.data);
 					break;
 				case 'VKWebAppGetUserInfoResult':
 					this.setState({
@@ -96,6 +97,13 @@ class App extends React.Component {
 						this.setState({ subSpam: true }); //check
 					} else {
 						this.setState({ subSpam: false });
+					}
+					break;
+				case 'VKWebAppJoinGroupResult':
+					if (e.detail.data.result) {
+						this.setState({ subGroup: true }); //check
+					} else {
+						this.setState({ subGroup: false });
 					}
 					break;
 				default:
@@ -225,8 +233,8 @@ class App extends React.Component {
 					<Registration id="registration" fetchedUser={this.state.fetchedUser} go={this.go} />
 					<Geolocation id="geolocation" showResult={this.state.showResult} allowGeolocation={this.state.allowGeolocation} getGeodata={this.getGeodata} geodata={this.state.geodata} go={this.go} />
 					<Notification id="notification" getNotifications={this.getNotifications} allowNotification={this.state.allowNotification} go={this.go} />
-					<SubscribeSpam fetchedUser={this.state.fetchedUser} subSpam={this.subSpam} id="subscribe-spam" go={this.go} />
-					<SubscribeGroup fetchedUser={this.state.fetchedUser} subGroup={this.subGroup} id="subscribe-group" go={this.go} />
+					<SubscribeSpam fetchedUser={this.state.fetchedUser} statusSub={this.state.subSpam} subSpam={this.subSpam} id="subscribe-spam" go={this.go} />
+					<SubscribeGroup fetchedUser={this.state.fetchedUser} statusSub={this.state.subGroup} subGroup={this.subGroup} id="subscribe-group" go={this.go} />
 					<Smartphone id="smartphone" platform={this.state.platform} scanQR={this.scanQR} getTaptic={this.getTaptic} controlFlashlight={this.controlFlashlight} turnFlashlight={this.state.turnFlashlight} go={this.go} />
 					<Monetization id="monetization" fetchedUser={this.state.fetchedUser} showResult={this.state.showResult} feedPersik={this.feedPersik} go={this.go} />
 					<Business id="business" go={this.go} />

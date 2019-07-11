@@ -30,7 +30,7 @@ function ChangeContent(props) {
 	}
 }
 
-const SubscribeSpam = ({ id, fetchedUser, go, subSpam }) => (
+const SubscribeSpam = ({ id, fetchedUser, go, subSpam, statusSub }) => (
 	<div className="Page" id={id}>
 		<section className="background_element">
 			<div className="Rectangle --first"></div>
@@ -52,9 +52,14 @@ const SubscribeSpam = ({ id, fetchedUser, go, subSpam }) => (
 						<article className="mes_2_sp">
 							В одно нажатие вы можете
 						</article>
+						{!statusSub ? 
 						<Button className="controls_cam_android --orange" size="xl" onClick={subSpam} level="secondary" >
 							Подписывать пользователей на сообщения
-						</Button>
+						</Button> : 
+						<Button className="controls_cam_android --green" size="xl" onClick={subSpam} level="secondary" >
+							Вы уже подписаны!
+						</Button>}
+						
 						<article className="mes_3_sp">
 							Так вы сможете выстроить цепочку писем и воронку продаж.
 						</article>

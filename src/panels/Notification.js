@@ -39,7 +39,7 @@ const Notification = ({ id, getNotifications, allowNotification, go }) => (
 						<Button size="xl" level="secondary" onClick={getNotifications}>
 							{`${ allowNotification ? 'Выключить push' : 'Включить push' }`}
 						</Button>
-						<Button className="controls_skip --cs_nt" level="tertiary" onClick={go} data-to="smartphone">
+						<Button className="controls_skip --cs_nt" level="tertiary" onClick={go} data-to="subscribe-spam">
 							К другим фишкам
 						</Button>
 					</section>

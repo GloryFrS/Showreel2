@@ -22,7 +22,7 @@ function ChangeContent(props) {
 					<article className="mes_2_sp">
 						В сервисе можно:
 					</article>
-					<Button className="controls_	cam --orange" size="xl" level="secondary" onClick={props.scanQR}>
+					<Button className="controls_cam --orange" size="xl" level="secondary" onClick={props.scanQR}>
 						Открыть камеру
 					</Button>
 					<Button className="controls_vib --orange" size="xl" level="secondary" onClick={props.getTaptic}>
@@ -101,9 +101,7 @@ const Smartphone = ({ id, platform, scanQR, getTaptic, controlFlashlight, turnFl
 					<ChangeContent platform={platform} scanQR={scanQR} getTaptic={getTaptic} controlFlashlight={controlFlashlight} turnFlashlight={turnFlashlight} />
 					<section className="messages_2_sp">
 						<article>
-							и многое другое!
-						</article>
-						<article className="mes_3_sp">
+							и многое другое! <br/>
 							Кстати, камера может сканировать QR-коды. <br/>Это еще одна точка входа в ваш бизнес.
 						</article>
 					</section>

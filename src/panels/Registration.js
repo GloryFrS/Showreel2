@@ -33,7 +33,7 @@ const Registration = ({ id, fetchedUser, go }) => (
 						<article className="messages_weight_reg">
 							Вас зовут {`${ fetchedUser.first_name ? fetchedUser.first_name + ' ' + fetchedUser.last_name : 'Юзер' }`},
 							Ваша дата {`${ fetchedUser.bdate ? fetchedUser.bdate : 'скрыта' }`},
-							Ваш город {`${ fetchedUser.city.title ? fetchedUser.city.title : 'на планете Земля' }`}.<br />
+							Ваш город {`${ fetchedUser.city ? fetchedUser.city.title : 'на планете Земля' }`}.<br />
 							И это далеко не все.
 						</article>
 					</section>

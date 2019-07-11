@@ -78,7 +78,6 @@ const Monetization = ({ id, fetchedUser, showResult, feedPersik, go }) => (
 					<div className="page_label" onClick={go} data-to="geolocation"></div>
 					<div className="page_label" onClick={go} data-to="subscribe-spam"></div>
 					<div className="page_label" onClick={go} data-to="subscribe-group"></div>
-					<div className="page_label" onClick={go} data-to="subscribe"></div>
 					<div className="page_label" onClick={go} data-to="smartphone"></div>
 					<div className="page_label --current"></div>
 					<div className="page_label" onClick={go} data-to="business"></div>

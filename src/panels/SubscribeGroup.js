@@ -30,7 +30,7 @@ function ChangeContent(props) {
 	}
 }
 
-const SubscribeGroup = ({ id, fetchedUser, go, subGroup }) => (
+const SubscribeGroup = ({ id, fetchedUser, go, subGroup, statusSub }) => (
 	<div className="Page" id={id}>
 		<section className="background_element">
 			<div className="Rectangle --first"></div>
@@ -52,9 +52,14 @@ const SubscribeGroup = ({ id, fetchedUser, go, subGroup }) => (
 						<article className="mes_2_sp">
 							Так же легко вы можете
 						</article>
+						{!statusSub ? 
 						<Button className="controls_cam_android --orange" size="xl" level="secondary" onClick={subGroup} >
 							Подписывать пользователей на группу
-						</Button>
+						</Button> : 
+						<Button className="controls_cam_android --green" size="xl" level="secondary" onClick={subGroup} >
+							Вы уже подписаны!
+						</Button>}
+						
 						<article className="mes_3_sp">
 							Таким образом мы подписали на свою группу<br/> 150 000 человек за два месяца.
 						</article>
